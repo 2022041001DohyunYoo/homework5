@@ -34,6 +34,8 @@ int main(void)
 
 	char command; //사용자 명령 저장용 변수
 
+	printf("[-----[유도현][2022041001]-----]\n\n");
+
 	do{
 		printf("\n-----------------------------------------------------\n");
 		printf("                     Circular Q                   \n");
@@ -107,7 +109,7 @@ element getElement()
 int isEmpty(QueueType *cQ) //큐가 비어있으면 1을 반환, 아니면 0을 반환하는 함수
 {
 
-    if(cQ->front == 0 && cQ->rear == 0)    return 1; 
+    if(cQ->front == cQ->rear)    return 1; 
 	//만약 큐의 front와 rear가 같은 위치 가리키고 이쓰면 1반환
 
     else return 0; // 아니면 0반환
